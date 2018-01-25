@@ -1,11 +1,22 @@
-\documentclass[11pt]{article}
-\usepackage[margin=1.25in]{geometry}
-\begin{document}
+\documentclass[DM,toc,lsstdraft]{lsstdoc}
 
-\rightline{The LSST Project Office; January 19, 2018}
-\vskip 0.2in
-\centerline{\bf New Nomenclature for the LSST Data Products}
-\vskip 0.1in
+\setDocChangeRecord{%
+\addtohist{1.0}{2018-01-24}{Initial formal version after LCR-1214 process.} {G.P.~Dubois-Felsmann}
+}
+
+\title{LSST Data Product Categories}
+\date{\today}
+
+\author{G.P.~Dubois-Felsmann, Z.~Ivezic, M.~Juric}
+\setDocRef      {LPM-231} % the reference code
+\setDocUpstreamLocation{\url{https://github.com/lsst/LPM-231}}
+%
+% a short abstract
+%
+\setDocAbstract{Summarizes the categories of LSST data products, based on the definitions in the SRD (LPM-17) and DPDD (LSE-163).}
+
+\begin{document}
+\maketitle
 
 This note defines the user-facing, operations-era language to be used for the three
 main categories of data products to be served by LSST, and connects this language to
