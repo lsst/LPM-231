@@ -1,7 +1,8 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
+\usepackage[margin=1.25in]{geometry}
 \begin{document}
 
-\rightline{The LSST Project Office; January 18, 2018}
+\rightline{The LSST Project Office; January 19, 2018}
 \vskip 0.2in
 \centerline{\bf New Nomenclature for the LSST Data Products}
 \vskip 0.1in
@@ -11,7 +12,7 @@ main categories of data products to be served by LSST, and connects this languag
 the construction-era language that is used in requirements and design documents.
 
 This language was introduced in 2018.
-Further information is available in Docushare Document-27013 and in the record for change request LCR-1214.
+Further information is available in Document-27013 and in the record for change request LCR-1214.
 
 The substance of the definition of the three main categories of data products remains as set forth in the LSST Science Requirements Document (SRD, LPM-17):
 
@@ -23,18 +24,15 @@ These will include calibrated images; measurements of positions, fluxes, and sha
 The Data Release data products will include a uniform reprocessing of the difference-imaging-based Prompt data products.
 In pre-2018 editions of the SRD and in project requirements and design documents, these are referred to as ``{\bf Level 2}'' data products.
 \item {\bf User Generated} data products will originate from the community, including project teams.
-These will be created and stored using suitable Applications Programming Interfaces (APIs) that will be provided by the LSST Data Management System.
-The system will provide for users and groups to maintain access control over the data products they create, enabling them to have limited distribution or to be shared with the entire LSST community.
+These will be created and stored using suitable Application Programming Interfaces (APIs) that will be provided by the LSST Data Management System.
+The system will allow the science teams to use the full power of the LSST database systems and Science Platform for the storage, access, and analysis of their results.
+It will provide for users and groups to maintain access control over the data products they create, enabling them to have limited distribution or to be shared with the entire LSST community.
 The Data Management System will provide at least 10\% of its total capacity for User Generated data product storage and user-dedicated processing.
-The key aspect of these capabilities is that they will reside ``next to" the LSST data, avoiding the latency associated with downloads.
-This will allow the science teams to use the full power of the LSST database systems and Science Platform for the storage, aceess, and analysis of their results.
 In pre-2018 editions of the SRD and in project requirements and design documents, User Generated data products are referred to as ``{\bf Level 3}'' data products.
 \end{itemize}
 
 This language was introduced to alleviate persistent communication challenges associated with the original terminology.
-The ``Level 1-2-3'' data products nomenclature conveyed no inherent descriptive information and has been a persistent source of confusion when interacting with the LSST community\footnote{Even worse, the ``Level 1-2-3'' terms were often understood incorrectly if the listener tried to establish analogies with the nomenclature used for levels of triggers in high energy physics, or support levels in high performance computing, or assumed that they represented a flow of stages of processing.}.
-The original ``Level 1-3'' nomenclature is firmly baked into internal LSST documentation, starting with the SRD, and we do not expect or plan to replace it in full in existing documents.
-Some key documents will be revised to use both sets of terminology, to facilitate making the necessary connections.
+The ``Level 1-2-3'' data products nomenclature conveyed no inherent descriptive information and has been a persistent source of confusion when interacting with the LSST community\footnote{The ``Level 1-2-3'' terms were also often understood incorrectly if a listener tried to establish analogies with the nomenclature used for levels of triggers in high energy physics, or with support levels in high performance computing, or assumed that they represented a flow of stages of processing.}.
 
 The nomenclature of {\bf ``Prompt"}, {\bf ``Data Release"}, and {\bf ``User Generated"} data products will henceforth be used consistently when speaking to the community and in operations planning, including but not limited to:
 \begin{itemize}
@@ -46,6 +44,10 @@ The nomenclature of {\bf ``Prompt"}, {\bf ``Data Release"}, and {\bf ``User Gene
 \item In documents being written for the Operations era (user guides, documentation, etc.).
 \end{itemize}
 
-The ``Level 1-3'' nomenclature can still be used but it needs to be emphasized that this is a construction-era nomenclature, that the Project is phasing it out towards Operations, and that it is being mentioned to facilitate the audience's understanding that it is still present in the Project's internal documents.
+The ``Level 1-2-3'' nomenclature may still be used in external communications \emph{in addition} to the above terminology, but with the emphasis that it is a construction-era nomenclature, that the Project is phasing it out towards Operations, and that it is being mentioned to facilitate the audience's understanding of the Project's internal documents and to connect to previously presented material.
+
+The original nomenclature is firmly baked into internal LSST requirements and design documentation, and we do not expect or plan to replace it in full in these existing documents.
+Some key documents will be revised to use both sets of terminology, to facilitate making the necessary connections.
+New internal design documents should still use the  ``Level 1-2-3'' terminology, to maintain the coherence of the body of such documents, but may also use the new terminology, particularly for design documents which are likely to be of interest to users.
 
 \end{document}
