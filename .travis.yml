@@ -10,7 +10,6 @@ before_install:
 script:
   # Compile PDF using containerized lsst-texmf
   - "docker run --rm -v `pwd`:/workspace -w /workspace lsstsqre/lsst-texmf:latest sh -c 'make'"
-after_success:
   # Deploy website. See https://github.com/lsst-sqre/lander for CLI options
   - "lander --pdf LPM-231.pdf --upload --lsstdoc LPM-231.tex --env=travis --ltd-product lpm-231"
 env:
